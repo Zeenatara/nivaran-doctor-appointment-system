@@ -8,12 +8,14 @@ import MyProfile from './pages/MyProfile';
 import MyAppointment from './pages/MyAppointment';
 import Appointment from './pages/Appointment';
 import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <>
     <Navbar/>
-    
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/doctors" element={<Doctors />} />
@@ -24,6 +26,7 @@ const App = () => {
         <Route path="/my-appointment" element={<MyAppointment />} />
         <Route path="/appointment/:docId" element={<Appointment />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
